@@ -1,0 +1,41 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Login Authentication</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="login_div" class="main_div">
+		<h3>
+			<center>Login Authentication</center>
+		</h3>
+		<input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login</button>
+  </div>
+  <div id="user_div" class="loggedin_div">
+    <h3><center>YAYYY! You successfully logged-in using Firebase.....</center></h3>
+    <button onclick="logout()">Logout</button>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+  apiKey: "AIzaSyDymzCPyCBKbB94vUhFf5vYRUk7oohBfXg",
+  authDomain: "login-auth-e8273.firebaseapp.com",
+  projectId: "login-auth-e8273",
+  storageBucket: "login-auth-e8273.appspot.com",
+  messagingSenderId: "951166585777",
+  appId: "1:951166585777:web:9f46a9dfa03c1723adcb90"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="script.js"></script>
+</body>
+</html>
